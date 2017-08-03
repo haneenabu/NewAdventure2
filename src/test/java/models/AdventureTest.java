@@ -20,10 +20,23 @@ public class AdventureTest {
         assertEquals(true, testAdventure.passBack("1"));
 
     }
+
     @Test
     public void passBack_passBackUserInput_false() throws Exception {
         Adventure testAdventure = new Adventure();
         assertEquals(false, testAdventure.passBack("2"));
 
+    }
+
+    @Test
+    public void pathChoice_passBackUserChoice_true() throws Exception {
+        Adventure testAdventure = new Adventure();
+        assertEquals(true, testAdventure.pathChoice("3"));
+    }
+
+    @Test
+    public void pathChoice_passBackUserChoice_false() throws Exception {
+        Adventure testAdventure = new Adventure();
+        assertEquals(false, testAdventure.pathChoice("4"));
     }
 }
